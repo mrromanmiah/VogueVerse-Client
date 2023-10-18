@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
 
         <div>
-            <nav className="lg:flex space-y-4 lg:space-y-0 md:space-y-0 items-center justify-between py-6 px-16 text-center">
+            <nav className="lg:flex space-y-4 lg:space-y-0 md:space-y-0 items-center justify-between py-6 px-16 text-center bg-[#dad7cd]">
                 <div className="lg:flex items-center gap-3">
                     <img className="flex items-center mx-auto w-12" src={'https://i.ibb.co/M9yYcX9/logo-Black.png'} alt="" />
                     <h1 className="text-3xl lg:mb-0 md:mb-4 font-extrabold">VogueVerse</h1>
