@@ -40,11 +40,11 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <Cart></Cart>
-      }
+      },
       // {
       //   path: "/brands/:id",
-      //   element: <PrivateRout><Details></Details></PrivateRout>,
-      //   loader: () => fetch('/card.json')
+      //   element: <Details></Details>,
+      //   loader: () => fetch('/brand.json')
       // }
 
     ]

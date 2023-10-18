@@ -1,11 +1,14 @@
+import Choose from "../components/choose/Choose";
 import Banner from "../components/header/Banner";
+import { useLoaderData } from "react-router-dom";
 
 
 const Home = () => {
+    const brands = useLoaderData()
     return (
         <div>
             <Banner></Banner>
-            <h1>Home</h1>
+            <Choose></Choose>
         </div>
     );
 };
