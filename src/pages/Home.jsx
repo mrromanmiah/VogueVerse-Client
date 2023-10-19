@@ -9,7 +9,7 @@ import Instagram from "../components/instagram/Instagram";
 const Home = () => {
     const brands = useLoaderData()
     return (
-        <div className="bg-gray-200">
+        <div className="bg-gray-100">
             <Banner></Banner>
             <Choose></Choose>
             <Brands brands={brands}></Brands>

@@ -5,14 +5,14 @@
         "brandName": "Adidas"
     },
     {
-        "id": "gucci",
-        "brandImage": "https://i.ibb.co/WBMs45r/gucci.png",
-        "brandName": "Gucci"
-    },
-    {
         "id": "chanel",
         "brandImage": "https://i.ibb.co/df3ZKLj/chanel.png",
         "brandName": "Chanel"
+    },
+    {
+        "id": "gucci",
+        "brandImage": "https://i.ibb.co/WBMs45r/gucci.png",
+        "brandName": "Gucci"
     },
     {
         "id": "louisVuitton",

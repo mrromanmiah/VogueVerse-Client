@@ -22,9 +22,18 @@ const AuthProvider = ({ children }) => {
             });
     }
 
-    const signInUser = (email, password) => {
+    const signInUser = (email, password, displayName, photoURL) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password)
+        .then(result => {
+            const updatedUser = {
+                ...result.user,
+                displayName,
+                photoURL,
+            };
+            setUser(updatedUser);
+            return result;
+        });
 
     }
 
