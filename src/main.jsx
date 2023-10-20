@@ -13,6 +13,7 @@ import Register from './userAuthentication/Register';
 import AuthProvider from './providers/AuthProvider';
 import AddProduct from './pages/AddProduct';
 import Cart from './pages/Cart';
+import Products from './pages/Products';
 
 const router = createBrowserRouter([
   {
@@ -41,11 +42,11 @@ const router = createBrowserRouter([
         path: '/cart',
         element: <Cart></Cart>
       },
-      // {
-      //   path: "/brands/:id",
-      //   element: <Details></Details>,
-      //   loader: () => fetch('/brand.json')
-      // }
+      {
+        path: "/brands/:id",
+        element: <Products></Products>,
+        loader: () => fetch('/brand.json')
+      }
 
     ]
   }
