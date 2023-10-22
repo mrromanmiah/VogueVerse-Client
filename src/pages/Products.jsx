@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useParams} from "react-router-dom";
+import {useLoaderData, useParams} from "react-router-dom";
 import ProductCard from "../components/productsCard/ProductCard";
 
 
