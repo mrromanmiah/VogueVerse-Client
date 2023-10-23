@@ -28,7 +28,7 @@ const ProductCard = ({product}) => {
     </div>
     <div className="flex justify-between pt-4">
       <Link to={`/details/${_id}`}><button className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]">Details</button></Link>
-      <Link><button className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]">Update</button></Link>
+      <Link to={`/updateProduct/${_id}`}><button className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]">Update</button></Link>
     </div>
   </div>
 </div>
