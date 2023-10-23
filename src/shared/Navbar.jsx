@@ -50,7 +50,7 @@ const Navbar = () => {
                         <>
                             <li>
                                 <NavLink
-                                    to="/cart"
+                                    to={`/cart/${user ? user.email : ''}`}
                                     className={({ isActive, isPending }) =>
                                         isPending ? "pending" : isActive ? "text-white bg-[#52796f] py-3 px-4 rounded-md font-bold text-base" : "text-white bg-[#84a98c] py-3 px-4 rounded-md font-bold text-base hover:bg-[#52796f]"
                                     }

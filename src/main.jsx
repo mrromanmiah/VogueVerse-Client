@@ -12,7 +12,7 @@ import Login from './userAuthentication/Login';
 import Register from './userAuthentication/Register';
 import AuthProvider from './providers/AuthProvider';
 import AddProduct from './pages/AddProduct';
-import Cart from './pages/Cart';
+import CartContainer from './pages/Cart/CartContainer';
 import Products from './pages/Products';
 import Details from './components/details/Details';
 import UpdateProduct from './pages/UpdateProduct';
@@ -46,8 +46,9 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch (`http://localhost:5000/updateProduct/${params.id}`)
       },
       {
-        path: '/cart',
-        element: <Cart></Cart>
+        path: '/cart/:userEmail',
+        element: <CartContainer></CartContainer>,
+        loader: ({params}) => fetch (`http://localhost:5000/cart/${params.userEmail}`)
       },
       {
         path: '/products/:brandName',
@@ -59,7 +60,6 @@ const router = createBrowserRouter([
         element: <Details></Details>,
         loader: ({params}) => fetch (`http://localhost:5000/product/${params.id}`)
       }
-
     ]
   }
 ])

@@ -38,6 +38,13 @@ const UpdateProduct = () => {
                     'success'
                   )
             }
+            else {
+                Swal.fire(
+                    'Oops!',
+                    'No changes were made. Please make sure to modify the product.',
+                    'error'
+                );
+            }
         })
 
     }
@@ -91,7 +98,7 @@ const UpdateProduct = () => {
                     <h3 className="font-bold">Product Description<span className="text-[#d82148]">*</span></h3>
                     <textarea className="rounded-md border-2 py-2 px-6 lg:w-1/3" defaultValue={description} name="description" id="" cols="30" rows="5" placeholder="Write a short description..." required></textarea>
                 </div>
-                <input className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]" type="submit" value="Add" />
+                <input className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]" type="submit" value="Update" />
             </form>
         </div>
     );
