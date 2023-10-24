@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ({params}) => fetch (`https://b8a10-brandshop-server-side-mrromanmiah-md01v71sm.vercel.app/product/${params.id}`)
       }
     ]
