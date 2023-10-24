@@ -17,7 +17,7 @@ const AddProduct = () => {
         const newProduct = { productImage, productName, brandName, productType, price, rating, description }
         console.log(newProduct);
 
-        fetch('https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/products', {
+        fetch('https://b8a10-brandshop-server-side-mrromanmiah-md01v71sm.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -33,6 +33,7 @@ const AddProduct = () => {
                     'You added this product successfully!',
                     'success'
                   )
+                  form.reset();
             }
         })
 
