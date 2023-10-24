@@ -49,7 +49,7 @@ const DetailsCard = ({ details }) => {
     return (
         <form onSubmit={handleCart}>
             <div className="flex justify-center items-center mx-auto">
-            <div className=" w-1/2 mx-20 mb-20 bg-base-100 shadow-xl rounded-lg">
+            <div className="lg:w-1/2 lg:mx-20 md:mx-16 mx-8 mb-20 bg-base-100 shadow-xl rounded-lg">
                 <figure className="px-10 pt-10">
                     <img src={productImage} alt="Product" className="rounded-lg" />
                 </figure>

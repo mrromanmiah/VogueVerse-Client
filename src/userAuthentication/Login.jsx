@@ -91,12 +91,12 @@ const Login = () => {
             <form onSubmit={handleLogin} className="space-y-4 mb-6 ">
                 <div className="text-center space-y-2">
                     <h3 className="font-bold">E-mail<span className="text-[#d82148]">*</span></h3>
-                    <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type="email" name="email" id="" placeholder="E-mail" required />
+                    <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type="email" name="email" id="email" placeholder="E-mail" required />
                 </div>
                 <div className="text-center space-y-2">
                     <h3 className="font-bold">Password<span className="text-[#d82148]">*</span></h3>
                     <div className="relative">
-                        <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type={showPassword ? "text" : "password"} name="password" id="" placeholder="Password" required />
+                        <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Password" required />
                         <span className="absolute top-4 -ml-10" onClick={() => setShowPassword(!showPassword)}>
                             {
                                 showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>

@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 const Instagram = () => {
     return (
         <div className="p-20">
-            <div className="px-20 text-center">
+            <div className="lg:px-20 md:px-20 px-5 text-center">
                 <h1 className="text-4xl text-[#2f3e46] font-extrabold">Instagram</h1>
                 <p className="text-[#84a98c] mb-10">Explore the art of fashion through our lens.</p>
             </div>
