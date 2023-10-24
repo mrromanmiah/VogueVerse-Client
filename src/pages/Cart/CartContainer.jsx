@@ -22,7 +22,7 @@ const CartContainer = () => {
                 ) : (
                     <div className="space-y-4">
                         <img className="w-32 flex justify-center mx-auto" src="https://i.ibb.co/jGFMCF0/cart.png" alt="" />
-                        <p className="text-xl font-bold">Your Cart is Empty</p>
+                        <p className="text-xl font-bold dark:text-white">Your Cart is Empty</p>
                     </div>
                 )}
             </div>

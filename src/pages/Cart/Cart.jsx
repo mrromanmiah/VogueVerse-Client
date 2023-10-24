@@ -19,7 +19,7 @@ const Cart = ({ cart, reset, setReset }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

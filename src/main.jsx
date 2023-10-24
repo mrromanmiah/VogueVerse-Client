@@ -45,22 +45,22 @@ const router = createBrowserRouter([
       {
         path: '/updateProduct/:id',
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => fetch (`http://localhost:5000/updateProduct/${params.id}`)
+        loader: ({params}) => fetch (`https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/updateProduct/${params.id}`)
       },
       {
         path: '/cart/:email',
         element: <PrivateRoute><CartContainer></CartContainer></PrivateRoute>,
-        loader: ({params}) => fetch (`http://localhost:5000/cart/${params.email}`)
+        loader: ({params}) => fetch (`https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/cart/${params.email}`)
       },
       {
         path: '/products/:brandName',
         element: <Products></Products>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.brandName}`)
+        loader: ({params}) => fetch(`https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/products/${params.brandName}`)
       },
       {
         path: '/details/:id',
         element: <Details></Details>,
-        loader: ({params}) => fetch (`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch (`https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/product/${params.id}`)
       }
     ]
   }

@@ -26,7 +26,7 @@ const DetailsCard = ({ details }) => {
                 description,
                 userEmail: user?.email }
     
-            fetch('http://localhost:5000/cart', {
+            fetch('https://b8a10-brandshop-server-side-mrromanmiah-4x1k0fdgu.vercel.app/cart', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
