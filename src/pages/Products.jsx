@@ -17,8 +17,8 @@ const Products = () => {
     const formattedBrandName =
         brandName.charAt(0).toUpperCase() + brandName.slice(1);
     return (
-        <div className="bg-gray-200 pt-10">
-            <h1 className="text-4xl text-[#2f3e46] font-extrabold text-center">{formattedBrandName}</h1>
+        <div className=" dark:bg-zinc-800 pt-10">
+            <h1 className="text-4xl text-[#2f3e46] font-extrabold text-center dark:text-white">{formattedBrandName}</h1>
             <div className="mt-10">
             <Swiper
     style={{

@@ -49,18 +49,18 @@ const DetailsCard = ({ details }) => {
     return (
         <form onSubmit={handleCart}>
             <div className="flex justify-center items-center mx-auto">
-            <div className="lg:w-1/2 lg:mx-20 md:mx-16 mx-8 mb-20 bg-base-100 shadow-xl rounded-lg">
+            <div className="lg:w-1/2 lg:mx-20 md:mx-16 mx-8 mb-20 lg:mt-20 md:mt-10 mt-5 border-2 shadow-xl rounded-lg">
                 <figure className="px-10 pt-10">
                     <img src={productImage} alt="Product" className="rounded-lg" />
                 </figure>
                 <div className="items-center text-center px-10 pt-3 pb-10 space-y-3">
-                    <h2 className="text-3xl font-bold">{productName}</h2>
-                    <p className="text-sm text-gray-500">{description}</p>
-                    <div className="flex justify-between font-semibold text-gray-500">
+                    <h2 className="text-3xl font-bold dark:text-white">{productName}</h2>
+                    <p className="text-sm text-gray-500 dark:text-[#84a98c]">{description}</p>
+                    <div className="flex justify-between font-semibold text-gray-500 dark:text-[#84a98c]">
                         <p>Brand: {formattedBrandName}</p>
                         <p>Type: {formattedProductType}</p>
                     </div>
-                    <div className="flex justify-between font-semibold text-gray-500">
+                    <div className="flex justify-between font-semibold text-gray-500 dark:text-[#84a98c]">
                         <p>Price: $ {price}</p>
                         <p className="flex items-center gap-3"><Rating name="half-rating-read" value={rating} precision={0.5} readOnly></Rating>{rating}</p>
                     </div>

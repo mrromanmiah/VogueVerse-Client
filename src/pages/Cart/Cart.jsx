@@ -49,11 +49,11 @@ const Cart = ({ cart, reset, setReset }) => {
 
 
             <div className="lg:col-span-2 lg:text-left">
-                <h2 className="text-xl font-bold">{productName}</h2>
-                <p className="font-medium">{formattedBrandName}</p>
+                <h2 className="text-xl font-bold dark:text-white">{productName}</h2>
+                <p className="font-medium dark:text-[#84a98c]">{formattedBrandName}</p>
             </div>
             <div className=" text-3xl font-extrabold">
-                <h3>$ {price}</h3>
+                <h3 className="dark:text-white">$ {price}</h3>
             </div>
             <div>
                 <button onClick={() => handleDelete(_id)} className="bg-red-600 rounded-md text-white px-6 py-3 font-bold">Delete</button>

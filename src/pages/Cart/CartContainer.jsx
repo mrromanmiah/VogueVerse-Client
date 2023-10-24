@@ -11,7 +11,7 @@ const CartContainer = () => {
 
         <div>
             <div className="px-20 text-center mt-10">
-                <h1 className="text-4xl text-[#2f3e46] font-extrabold">My Cart</h1>
+                <h1 className="text-4xl text-[#2f3e46] font-extrabold dark:text-white">My Cart</h1>
                 <p className="text-[#84a98c] mb-10">Gateway to endless options; explore, choose, and breeze through checkout.</p>
             </div>
             <div className="text-center mt-8 grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-6 lg:px-20 md:px-10 px-10 pb-20">

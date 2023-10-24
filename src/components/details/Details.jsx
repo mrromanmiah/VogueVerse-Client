@@ -12,9 +12,7 @@ const Details = () => {
 
     return (
         <div>
-            
-                <DetailsCard details={details}></DetailsCard>
-          
+            <DetailsCard details={details}></DetailsCard> 
         </div>
     );
 };

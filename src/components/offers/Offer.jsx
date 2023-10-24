@@ -4,7 +4,7 @@ const Offer = () => {
     return (
         <div>
             <div className="px-20 text-center mt-20">
-                <h1 className="text-4xl text-[#2f3e46] font-extrabold">Offer</h1>
+                <h1 className="text-4xl text-[#2f3e46] font-extrabold dark:text-white">Offer</h1>
                 <p className="text-[#84a98c] mb-10">Elevate your style with savings that speak to your unique flair.</p>
             </div>
             <div className="lg:grid grid-cols-4 gap-4 lg:space-y-0 md:space-y-6 space-y-6 lg:px-20 md:px-10 px-10">
@@ -13,7 +13,7 @@ const Offer = () => {
                     <p className="text-[#354f52] text-lg font-bold pb-3">Discount-20%</p>
                     <button className="bg-[#2f3e46] text-white font-bold rounded-md px-6 py-3 hover:bg-[#52796f] ">Shop Now</button>
                 </div>
-                <div className="relative bg-[url(https://i.ibb.co/FHM6bkR/offer2.jpg)] bg-cover bg-center bg-no-repeat px-10 pb-36 pt-5 col-span-2 flex flex-col items-start rounded-lg">
+                <div className="relative bg-[url(https://i.ibb.co/FHM6bkR/offer2.jpg)] bg-cover bg-center bg-no-repeat lg:px-20 md:px-10 px-10 pb-36 pt-5 col-span-2 flex flex-col items-start rounded-lg">
                     <h1 className="text-[#2f3e46] text-2xl font-bold">T-Shirt Prada</h1>
                     <p className="text-[#354f52] text-lg font-bold pb-3">Discount-20%</p>
                     <button className="bg-[#2f3e46] text-white font-bold rounded-md px-6 py-3 hover:bg-[#52796f] ">Shop Now</button>

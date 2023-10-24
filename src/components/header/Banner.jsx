@@ -6,7 +6,7 @@ const Banner = () => {
             <div className="lg:text-right md:text-right text-center lg:w-1/2 md:w-1/2 lg:space-y-3 md:space-y-3 space-y-3">
                 <h1 className="text-white lg:text-4xl md:text-2xl text-xl font-extrabold lg:text-right md:text-right text-center">A Symphony of Uncommon Style</h1>
                 <p className=" text-white lg:text-base md:text-sm text-xs font-medium lg:text-right md:text-right text-center pb-4">Dive into a fantasy realm where fashion meets individuality, redefining the ordinary with our whimsical collection.</p>
-                <button className="bg-[#cad2c5] text-[#2f3e46] font-bold rounded-md px-6 py-3 hover:bg-[#52796f] hover:text-white">Explore</button>
+                <button className=" bg-[#52796f] text-white font-bold rounded-md px-6 py-3 hover:bg-[#cad2c5] hover:text-[#2f3e46]">Explore</button>
             </div>
         </div>
 

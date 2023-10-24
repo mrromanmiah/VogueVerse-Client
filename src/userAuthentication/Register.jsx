@@ -67,25 +67,25 @@ const Register = () => {
             })
     }
     return (
-        <div className="bg-gray-100">
+        <div className="dark:bg-zinc-800">
             <div className="px-20 text-center pt-10 mb-10">
-                <h1 className="text-4xl text-[#2f3e46] font-extrabold">Register</h1>
+                <h1 className="text-4xl text-[#2f3e46] font-extrabold dark:text-white">Register</h1>
             </div>
             <form onSubmit={handleRegister} className="space-y-4 mb-10">
                 <div className="text-center space-y-2">
-                    <h3 className="font-bold">Name<span className="text-[#d82148]">*</span></h3>
+                    <h3 className="font-bold dark:text-white">Name<span className="text-[#d82148]">*</span></h3>
                     <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type="text" name="displayName" id="" placeholder="Your name" />
                 </div>
                 <div className="text-center space-y-2">
-                    <h3 className="font-bold">E-mail<span className="text-[#d82148]">*</span></h3>
+                    <h3 className="font-bold dark:text-white">E-mail<span className="text-[#d82148]">*</span></h3>
                     <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type="email" name="email" id="" placeholder="Your email" required />
                 </div>
                 <div className="text-center space-y-2">
-                    <h3 className="font-bold">Photo URL</h3>
+                    <h3 className="font-bold dark:text-white">Photo URL</h3>
                     <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type="url" name="photoURL" id="" placeholder="Your photo URL" />
                 </div>
                 <div className="text-center space-y-2">
-                    <h3 className="font-bold">Password<span className="text-[#d82148]">*</span></h3>
+                    <h3 className="font-bold dark:text-white">Password<span className="text-[#d82148]">*</span></h3>
                     <div className="relative">
                         <input className="rounded-md border-2 py-2 px-6 lg:w-1/3" type={showPassword ? "text" : "password"} name="password" id="" placeholder="Password" required />
                         <span className="absolute top-4 -ml-10" onClick={() => setShowPassword(!showPassword)}>
@@ -97,11 +97,11 @@ const Register = () => {
                 </div>
                 <div className="flex gap-2 items-center justify-center">
                     <input type="checkbox" name="terms" id="" />
-                    <label htmlFor="terms">Accept our <a className="text-blue-700 hover:underline" href="#">terms</a> and <a className="text-blue-700 hover:underline" href="#">conditions</a></label>
+                    <label className="dark:text-white" htmlFor="terms">Accept our <a className="text-blue-700 hover:underline" href="#">terms</a> and <a className="text-blue-700 hover:underline" href="#">conditions</a></label>
                 </div>
                 <input className="flex items-center mx-auto bg-[#2f3e46] text-white font-bold rounded-md px-6 py-2 hover:bg-[#52796f]" type="submit" value="Register" />
             </form>
-            <p className="text-center pb-20">Already have an account? <Link className="text-[#588157] hover:underline" to='/login'>Login</Link></p>
+            <p className="text-center pb-20 dark:text-white">Already have an account? <Link className="text-[#588157] hover:underline" to='/login'>Login</Link></p>
         </div>
     );
 };
